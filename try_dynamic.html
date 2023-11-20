@@ -161,7 +161,7 @@ void main() {
     let time = 8;
     const update = () => {
       requestAnimationFrame(update);
-      time += 0.01;
+      time += 0.005;
       gl.uniform2f(ucs, Math.cos(time * 0.4), Math.sin(time * 0.4));
       gl.uniform3f(
         ue,
